@@ -1,0 +1,8 @@
+reference,component,manufacturer,part_number,quantity,voltage,current_or_torque,interface,notes
+MCU-01,Microcontroller,TBD,TBD,1,TBD,TBD,TBD,Confirm loop and communication requirements
+ACT-01,Leg actuator,TBD,TBD,12,TBD,TBD,TBD,Confirm torque and speed from robot dynamics
+DRV-01,Motor driver,TBD,TBD,12,TBD,TBD,TBD,Match stall current and feedback interface
+ENC-01,Joint encoder,TBD,TBD,12,TBD,TBD,TBD,Required for closed-loop feedback unless integrated
+IMU-01,IMU,TBD,TBD,1,TBD,TBD,I2C/SPI,For body attitude estimation
+PWR-01,Battery and power distribution,TBD,TBD,1,TBD,TBD,TBD,Include fusing and accessible disconnect
+ESTOP-01,Physical emergency stop,TBD,TBD,1,TBD,TBD,Hardware interlock,Interrupt actuator energy independently of ROS

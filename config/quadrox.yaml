@@ -1,0 +1,22 @@
+/quadrox_gait_controller:
+  ros__parameters:
+    publish_rate_hz: 50.0
+    gait_mode: "stand"
+    gait_frequency_hz: 1.0
+    hip_amplitude_rad: 0.18
+    upper_amplitude_rad: 0.22
+    lower_amplitude_rad: 0.28
+    neutral_upper_rad: 0.55
+    neutral_lower_rad: -1.1
+    output_topic: "/quadrox/desired_joint_states"
+
+/quadrox_safety_supervisor:
+  ros__parameters:
+    input_topic: "/quadrox/desired_joint_states"
+    output_topic: "/quadrox/safe_joint_states"
+    estop_topic: "/quadrox/estop"
+    enabled_at_start: false
+    command_timeout_sec: 0.25
+    joint_limits: [-1.5, 1.5]
+    neutral_upper_rad: 0.55
+    neutral_lower_rad: -1.1
